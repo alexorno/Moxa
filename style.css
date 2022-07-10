@@ -48,6 +48,10 @@ nav ul li{
     line-height: 150%;
     border-bottom: #131416 solid 1px;
 }
+nav ul li a{
+    color: #161513;
+    text-decoration: none;
+}
 a.btn{
     color: #131416;
     padding: 9px 26px;
@@ -57,7 +61,7 @@ a.btn{
 /* hero */
 .wrapper .hero-section{
     display: grid;
-    grid-template-columns: 1fr 560px;
+    grid-template-columns: 58% 42%;
     margin: 40px 0;
 }
 .hero-section .left{
@@ -81,7 +85,7 @@ letter-spacing: .48px;
 
 .hero-section .right img{
 grid-column: 2;
-width: 560px;
+width: 100%;
 }
 .hero-section .btns{
     display: flex;
@@ -107,7 +111,7 @@ margin: 0;
 
 /* LINE */
 .line{
-    height: 200px;
+    height: fit-content;
     margin: 20px 0 100px 0;
     width: 100%;
     overflow: hidden;
@@ -117,7 +121,7 @@ margin: 0;
 .linebg{
     background-color: #161513;
     display: flex;
-    margin: 70px 0;
+    margin: 4.5% 0;
     color: white;
     transform: rotate(-4.93deg);
     height: 64px;
@@ -131,13 +135,12 @@ margin: 0;
     font-size: 18px;
 margin: auto 0px;
 justify-content: center;
+align-items: center;
+display: flex;
 position: relative;
 }
 .linebg p img{
-    position: absolute;
-    right: -40px;
-    top: 1px;
-    float: right;
+    margin: auto 10px;
 }
 
 /* 2nd screen */
@@ -520,6 +523,7 @@ footer form .btn{
     font-size: 23px;
 }
 
+
 footer .endbottom{
 background-color: #161513;
 color: white;
@@ -527,16 +531,43 @@ height: 220px;
 display: block;
 }
 footer .endin{
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
     justify-content: space-between;
 }
 footer .endin ul{
     list-style: none;
-}
-footer .endin ,.a,.b{
     display: flex;
+    margin: 0 50px;
 }
-footer .a img{
+footer .endin ul li{
+    margin: 0 50px;
+}
+footer .b ul li{
+    margin: 0 20px;
+    padding: 11.5px;
+    border: white 1px solid;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+}
+footer .b ul li img{
+    height: 14px;
+}
+footer .endin .a{
+    width: 100%;
+    margin: 55px 0;
+    grid-row: 1;
+    display: flex;;
+    justify-content: space-between;
+}
+footer .endin .b{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .endin .a img{
 width: 32px;
 }
