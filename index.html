@@ -12,6 +12,21 @@
 </head>
 <body>
     <header>
+        <div class="intro">
+            <div class="introtxt">
+                <h1 class="hide">
+                   <span class="txt">Welcome</span>
+                </h1>
+                <h1 class="hide">
+                    <span class="txt">To</span>
+                 </h1>
+                 <h1 class="hide">
+                    <span class="txt">MOXA</span>
+                 </h1>
+            </div>
+        </div>
+        <div class="introslide"></div>
+
         <nav>
             <div class="wrapper">
                 <div class="logo">
@@ -19,9 +34,9 @@
                 </div>
                 <div class="buttons">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="button">
@@ -30,7 +45,7 @@
             </div>
         </nav>
     </header>
-<div class="hero">
+<div class="hero" id="home">
     <div class="wrapper">
         <div class="hero-section">
             <div class="left">
@@ -55,7 +70,7 @@
     </div>
 </div>
 <!-- LINE -->
-<div class="line">
+<div class="line" >
     <div class="linebg">
         <p class="word">DEVELOPMENT<img src="/img/icon-star2.svg" alt=""></p>
         <p class="word">STRATEGY<img src="/img/icon-star2.svg" alt=""></p>
@@ -68,7 +83,7 @@
 </div>
 <!-- 2SECTION -->
 <div class="wrapper">
-    <div class="description">
+    <div class="description" id="about">
 
                 <div class="desc">
                     <div class="descgrid">
@@ -106,7 +121,7 @@
      
         
                 <div class="bottom">
-                    <div class="frame">
+                    <div class="frame" id="left">
                         <h1>7+</h1>
                         <p>Years of Experience</p>
                     </div>
@@ -116,7 +131,7 @@
                             <p>Project Completed </p>
                         </div>
                     </div>
-                    <div class="frame">
+                    <div class="frame" id="right">
                         
                         <h1>30+</h1>
                         <p>Happy Clients</p>
@@ -337,8 +352,8 @@
             <h2>REGONITIONS & ACCOIMPLISHMENTS</h2>
         </div>
         
-        <div class="cards">
-            <div class="card">
+            <div class="cards">
+                <div class="card">
                 <div class="left">
                     <h1>DESIGN / APRIL 28, 2022</h1>
                     <h2>Why I moved from Wordpress to Webflow</h2>
@@ -369,13 +384,16 @@
                 </div>
             </div>
             <a href="#" class="btn">Browse Articles</a>
-        </div>
     </div>
+
+</div>
+    
+    
 </body>
 
 <footer>
 
-        <div class="top">
+        <div class="top" id="contact">
             <div class="wrapper">
                 <div class="topin">
 
@@ -405,9 +423,9 @@
                     <div class="b">
                         <p>© Made by Portfolio Template & powered by Flowbase</p>
                         <ul>
-                            <li><img src="/img/icon-linkedin.svg" alt=""></li>
-                            <li><img src="/img/icon-twitter.svg" alt=""></li>
-                            <li><img src="/img/icon-insta.svg" alt=""></li>
+                            <li onclick="location.href='https://linkedin.com';" ><img src="/img/icon-linkedin.svg" alt=""></li>
+                            <li onclick="location.href='https://twitter.com';"><img src="/img/icon-twitter.svg" alt=""></li>
+                            <li onclick="location.href='https://www.instagram.com';";><img src="/img/icon-insta.svg" alt=""></li>
                         </ul>
                     </div>
                 </div>
@@ -416,5 +434,8 @@
 
 </footer>
 
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="main.js"></script>
 </html>

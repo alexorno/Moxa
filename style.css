@@ -11,9 +11,13 @@
     box-sizing: border-box;
 } 
 
-body {
+body{
     font-family: "Bai Jamjuree", sans-serif;
     background-color: #F5F5F5;
+}
+.noscroll{
+    height: 100%;
+    overflow: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -26,6 +30,44 @@ body::-webkit-scrollbar {
     margin: 0px auto;
     padding: 0px 20px;
 }
+/* intro */
+.intro{
+    background: #131313;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    color: rgb(249, 212, 194);
+}
+.introtxt{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+}
+.introtxt .txt{
+    font-size: 90px;
+}
+.hide{
+    background-color: #131313;
+    overflow: hidden;
+}
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+.introslide{
+    background: var(--orange-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    transform: translateY(100%);
+}
+
+
+
 
 /* nav */
 nav .wrapper{
@@ -147,6 +189,14 @@ position: relative;
 .description{
     margin-bottom: 80px;
 }
+#about::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -300px; 
+    height: 300px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
 .descgrid{
     display: grid;
     grid-template-columns: 30% 60%;
@@ -466,12 +516,13 @@ margin: auto;
     padding: 13px 44.3%;
     margin-bottom: 150px;
 }
-.articles .card:last-child::after{
+.articles .cards::after{
     content: "";
     background: url(/img/icon-star1.svg);
     background-size: 240px;
     position: absolute;
     overflow: hidden;
+    margin-top: -150px;
     width: 100px;
     height: 240px;
     right: 0px;
